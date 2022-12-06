@@ -1,3 +1,7 @@
+package day4
+
+import readInput
+
 fun main() {
     fun part1(input: List<String>): Int {
         return input.map { row ->
@@ -12,7 +16,7 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day04_test")
+    val testInput = readInput("day4/Day04_test")
     val testPart1 = part1(testInput)
     println("testPart1: $testPart1")
     val testPart2 = part2(testInput)
@@ -20,7 +24,7 @@ fun main() {
     check(testPart1 == 2)
     check(testPart2 == 4)
 
-    val input = readInput("Day04")
+    val input = readInput("day4/Day04")
     println("part1 : ${part1(input)}")
     println("part2 : ${part2(input)}")
 }

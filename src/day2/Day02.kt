@@ -1,9 +1,12 @@
-import Outcome.DRAW
-import Outcome.LOOSE
-import Outcome.WIN
-import Shape.PAPER
-import Shape.ROCK
-import Shape.SCISSOR
+package day2
+
+import day2.Outcome.DRAW
+import day2.Outcome.LOOSE
+import day2.Outcome.WIN
+import day2.Shape.PAPER
+import day2.Shape.ROCK
+import day2.Shape.SCISSOR
+import readInput
 
 fun main() {
     fun part1(input: List<String>): Int {
@@ -32,7 +35,7 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day02_test")
+    val testInput = readInput("day2/Day02_test")
     val testPart1 = part1(testInput)
     println("testPart1: $testPart1")
     val testPart2 = part2(testInput)
@@ -40,7 +43,7 @@ fun main() {
     check(testPart1 == 15)
     check(testPart2 == 12)
 
-    val input = readInput("Day02")
+    val input = readInput("day2/Day02")
     println("part1 : ${part1(input)}")
     println("part2 : ${part2(input)}")
 }

@@ -1,3 +1,7 @@
+package day3
+
+import readInput
+
 fun main() {
     fun part1(input: List<String>): Int {
         return input.map { it.toRucksack() }.sumOf { it.findDuplicate().priority() }
@@ -8,7 +12,7 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day03_test")
+    val testInput = readInput("day3/Day03_test")
     val testPart1 = part1(testInput)
     println("testPart1: $testPart1")
     val testPart2 = part2(testInput)
@@ -16,7 +20,7 @@ fun main() {
     check(testPart1 == 157)
     check(testPart2 == 70)
 
-    val input = readInput("Day03")
+    val input = readInput("day3/Day03")
     println("part1 : ${part1(input)}")
     println("part2 : ${part2(input)}")
 }

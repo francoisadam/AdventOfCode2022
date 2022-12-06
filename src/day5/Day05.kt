@@ -1,3 +1,7 @@
+package day5
+
+import readInput
+
 fun main() {
     fun part1(input: List<String>): String {
         val stacks = input.takeWhile { it.isNotBlank() }
@@ -16,7 +20,7 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day05_test")
+    val testInput = readInput("day5/Day05_test")
     val testPart1 = part1(testInput)
     println("testPart1: $testPart1")
     val testPart2 = part2(testInput)
@@ -24,7 +28,7 @@ fun main() {
     check(testPart1 == "CMZ")
     check(testPart2 == "MCD")
 
-    val input = readInput("Day05")
+    val input = readInput("day5/Day05")
     println("part1 : ${part1(input)}")
     println("part2 : ${part2(input)}")
 }

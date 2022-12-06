@@ -1,3 +1,7 @@
+package day1
+
+import readInput
+
 fun main() {
     fun part1(input: List<String>): Int {
         val elvesSupplies = input.joinToString(",")
@@ -19,7 +23,7 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
+    val testInput = readInput("day1/Day01_test")
     val testPart1 = part1(testInput)
     println("testPart1: $testPart1")
     val testPart2 = part2(testInput)
@@ -27,7 +31,7 @@ fun main() {
     check(testPart1 == 24000)
     check(testPart2 == 45000)
 
-    val input = readInput("Day01")
+    val input = readInput("day1/Day01")
     println("part1 : ${part1(input)}")
     println("part2 : ${part2(input)}")
 }
